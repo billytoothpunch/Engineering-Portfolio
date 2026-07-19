@@ -2,17 +2,17 @@
 
 ![Repository preview](assets/images/repository-preview.png)
 
-MATLAB-based nonlinear flight-dynamics project for a Cessna 550 business jet. The work covers aerodynamic coefficient modelling, steady straight-and-level flight trimming, numerical linearisation, eigenvalue and mode analysis, transfer functions, time-domain simulation and yaw-damper evaluation.
+MATLAB based nonlinear flight dynamics project for a Cessna 550 business jet. The work covers aerodynamic coefficient modelling, steady straight and level flight trimming, numerical linearisation, eigenvalue and mode analysis, transfer functions, time domain simulation and yaw damper evaluation.
 
 ## Project highlights
 
-- Implemented force and moment coefficients as functions of angle of attack, sideslip, angular rates and control-surface deflections.
-- Developed a nonlinear twelve-state, six-degree-of-freedom rigid-body equations-of-motion function.
+- Implemented force and moment coefficients as functions of angle of attack, sideslip, angular rates and control surface deflections.
+- Developed a nonlinear twelve state, six degree of freedom rigid body equations of motion function.
 - Evaluated trim from 60 to 180 m/s at an altitude of 4000 m.
-- Identified longitudinal and lateral-directional modes from the linearised state-space system.
-- Assessed phugoid, short-period, Dutch-roll, roll-subsidence and spiral behaviour.
-- Compared aircraft response in ascending-flight and control-input cases.
-- Investigated a feedback yaw damper using root-locus and closed-loop response plots.
+- Identified longitudinal and lateral directional modes from the linearised state space system.
+- Assessed phugoid, short period, Dutch roll, roll subsidence and spiral behaviour.
+- Compared aircraft response in ascending flight and control input cases.
+- Investigated a feedback yaw damper using root locus and closed loop response plots.
 
 ## Trim results
 
@@ -42,11 +42,11 @@ M = [Cl; Cm; Cn];
 The model includes:
 
 - Compressibility correction through Mach number
-- Nonlinear post-6-degree angle-of-attack terms
+- Nonlinear post 6 degree angle of attack terms
 - Reduced control effectiveness at high angle of attack
 - Elevator, aileron and rudder effects
-- Pitch-, roll- and yaw-rate derivatives
-- Angle-of-attack-rate contribution
+- Pitch , roll  and yaw rate derivatives
+- Angle of attack rate contribution
 
 ![Aerodynamic coefficient plots](assets/images/aerodynamic-coefficients.png)
 
@@ -64,23 +64,23 @@ and the control vector:
 [elevator aileron rudder throttle]'
 ```
 
-It calculates atmospheric conditions, dynamic pressure, aerodynamic and propulsion loads, rigid-body translational and rotational acceleration, Euler-angle rates and Earth-axis position rates.
+It calculates atmospheric conditions, dynamic pressure, aerodynamic and propulsion loads, rigid body translational and rotational acceleration, Euler angle rates and Earth axis position rates.
 
 ## Modal analysis
 
-The numerical linearisation was separated into longitudinal and lateral-directional subsystems. The report evaluates:
+The numerical linearisation was separated into longitudinal and lateral directional subsystems. The report evaluates:
 
-- **Short-period mode:** fast longitudinal pitch response
+- **Short period mode:** fast longitudinal pitch response
 - **Phugoid mode:** slow exchange between speed and altitude
-- **Dutch-roll mode:** oscillatory yaw-roll response
-- **Roll-subsidence mode:** fast, non-oscillatory roll decay
-- **Spiral mode:** slow lateral-directional divergence or convergence
+- **Dutch roll mode:** oscillatory yaw roll response
+- **Roll subsidence mode:** fast, non oscillatory roll decay
+- **Spiral mode:** slow lateral directional divergence or convergence
 
 ![Eigenvalue and modal plots](assets/images/eigenvalues-modes.png)
 
 ## Simulation results
 
-### Ascending-flight response
+### Ascending flight response
 
 ![Ascending flight response](assets/images/ascending-flight-response.png)
 
@@ -88,7 +88,7 @@ The numerical linearisation was separated into longitudinal and lateral-directio
 
 ![Phugoid response](assets/images/phugoid-response.png)
 
-### Lateral-directional modes
+### Lateral directional modes
 
 ![Dutch roll response](assets/images/dutch-roll-response.png)
 
@@ -98,7 +98,7 @@ The numerical linearisation was separated into longitudinal and lateral-directio
 
 ### Yaw damper
 
-A yaw damper was evaluated using rudder feedback from yaw rate. The feedback aims to increase Dutch-roll damping while preserving acceptable handling qualities.
+A yaw damper was evaluated using rudder feedback from yaw rate. The feedback aims to increase Dutch roll damping while preserving acceptable handling qualities.
 
 ![Yaw damper response](assets/images/yaw-damper-response.png)
 
@@ -128,32 +128,32 @@ A yaw damper was evaluated using rudder feedback from yaw rate. The feedback aim
 |---|---|
 | `C550init.m` | Initialises geometry, inertia, engine installation and aerodynamic derivatives |
 | `C550aero.m` | Calculates aerodynamic force and moment coefficients |
-| `EoM12.m` | Evaluates the nonlinear twelve-state rigid-body equations of motion |
+| `EoM12.m` | Evaluates the nonlinear twelve state rigid-body equations of motion |
 
 ## External dependencies
 
 The supplied scripts form part of a larger simulation framework. `EoM12.m` calls functions that were not included in the source archive:
 
-- `atmosphere`
+  `atmosphere`
 - `TurboFanEngine`
 
 The report also refers to trimming, linearisation and simulation scripts that were not included. Add those permitted model/framework files to `model-files/` or the MATLAB path before attempting to reproduce every result. The three included MATLAB files remain useful as readable evidence of the aerodynamic and equations-of-motion implementation.
 
 ## Limitations
 
-- Aerodynamic derivatives are a reduced-order representation rather than CFD or wind-tunnel data generated within this repository.
-- High-angle-of-attack behaviour uses simplified nonlinear corrections.
+- Aerodynamic derivatives are a reduced order representation rather than CFD or wind tunnel data generated within this repository.
+- High angle of attack behaviour uses simplified nonlinear corrections.
 - Trim failure may reflect propulsion/control limits, optimiser initialisation or framework constraints.
-- The model assumes rigid-body motion and does not include aeroelasticity.
+- The model assumes rigid body motion and does not include aeroelasticity.
 - Complete reproduction requires the external simulation framework listed above.
 
 ## Further development
 
-- Add automated trim-envelope generation with constraint diagnostics.
+- Add automated trim envelope generation with constraint diagnostics.
 - Compare linear and nonlinear responses from identical initial perturbations.
 - Validate modes against published Cessna 550 data where available.
 - Add actuator dynamics and rate limits.
-- Tune the yaw damper against damping-ratio and handling-quality targets.
+- Tune the yaw damper against damping ratio and handling quality targets.
 - Add unit tests for aerodynamic coefficients and equations of motion.
 
 ## Author
