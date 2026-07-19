@@ -1,0 +1,9 @@
+parameter,symbol,value,unit
+Wingspan,b,15.90,m
+Mean aerodynamic chord,c,2.09,m
+Wing area,S,30.00,m^2
+Mass,m,4157.00,kg
+Roll inertia,Ixx,12392.00,kg m^2
+Pitch inertia,Iyy,31501.00,kg m^2
+Yaw inertia,Izz,41908.00,kg m^2
+Product of inertia,Ixz,2252.20,kg m^2
