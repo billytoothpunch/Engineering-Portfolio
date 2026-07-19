@@ -1,0 +1,177 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Al 7075")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp3 = matl1.CreateProperty(
+    Name="S-N Curve",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp4 = matl1.CreateProperty(
+    Name="Tensile Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp5 = matl1.CreateProperty(
+    Name="Compressive Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp6 = matl1.CreateProperty(
+    Name="Tensile Ultimate Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["2800 [kg m^-3]"]])
+matlProp2.SetData(
+    Index=-1,
+    Variables=["Young's Modulus"],
+    Values=[["73050000000 [Pa]"]])
+matlProp2.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.33"]])
+matlProp4.SetData(
+    Index=-1,
+    Variables=["Tensile Yield Strength"],
+    Values=[["498000000 [Pa]"]])
+matlProp5.SetData(
+    Index=-1,
+    Variables=["Compressive Yield Strength"],
+    Values=[["498000000 [Pa]"]])
+matlProp6.SetData(
+    Index=-1,
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["560000000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["1"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["10"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["100"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["1000"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["10000"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["100000"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["1000000"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=-1,
+    Variables=["Cycles"],
+    Values=[["10000000"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Variables=["Alternating Stress"],
+    Values=[["560000000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=1,
+    Variables=["Alternating Stress"],
+    Values=[["462000000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=2,
+    Variables=["Alternating Stress"],
+    Values=[["382000000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=3,
+    Variables=["Alternating Stress"],
+    Values=[["315600000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=4,
+    Variables=["Alternating Stress"],
+    Values=[["260600000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=5,
+    Variables=["Alternating Stress"],
+    Values=[["215300000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=6,
+    Variables=["Alternating Stress"],
+    Values=[["177800000 [Pa]"]])
+matlProp3.SetData(
+    SheetName="S-N Curve",
+    SheetQualifiers={"Definition": "", "Behavior": "", "Interpolation": "Log-Log"},
+    Index=7,
+    Variables=["Alternating Stress"],
+    Values=[["147000000 [Pa]"]])
+favorites1 = EngData.LoadFavoriteItems()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/widad elyamani/Downloads/engd2106012 (1).stp")
+geometry1.Edit()
+geometry1.Exit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Aluminum Alloy",
+    Source="General_Materials.xml")
+matlProp7 = matl2.GetProperty(Name="Density")
+matlProp7.SetData(
+    Variables=["Density"],
+    Values=[["2800 [kg m^-3]"]])
+matlProp8 = matl2.GetProperty(Name="Elasticity")
+matlProp8.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["70350000000 [Pa]"]])
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
