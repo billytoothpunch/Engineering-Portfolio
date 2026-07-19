@@ -1,0 +1,6 @@
+metric,baseline,optimised,unit,requirement
+Mass,727,297,g,<300 g
+Maximum von Mises stress,35.992,48.027,MPa,<249 MPa allowable
+Maximum total deformation,0.089238,0.28001,mm,Not specified
+Minimum safety factor,13.84,10.37,-,>=2
+Mass reduction,,59.1,percent,-

@@ -1,0 +1,6 @@
+property,value,unit
+Density,2800,kg/m^3
+Young's modulus,73.05,GPa
+Poisson's ratio,0.33,-
+Yield strength,498,MPa
+Fatigue strength at 10^7 cycles,147,MPa

@@ -1,0 +1,7 @@
+parameter,value,unit,notes
+Rider mass,70,kg,Full rider weight assumed on one pedal
+Gravitational acceleration,9.81,m/s^2,
+Applied pedal force,686.7,N,F = m g
+Crank lever arm,0.17,m,
+Applied moment,116.739,N m,M = F d
+Allowable stress,249,MPa,Yield strength divided by required FoS 2
