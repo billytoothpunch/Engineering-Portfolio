@@ -2,7 +2,7 @@
 
 ## Engineering Case Study
 
-This repository presents the modelling, identification and control of a single-degree of freedom torsional mechanical system. Experimental data was used to identify plant parameters before designing and evaluating proportional and proportional derivative controllers.
+This repository presents the modelling, identification and control of a single degree of freedom torsional mechanical system. Experimental data was used to identify parameters before designing and evaluating proportional and proportional derivative controllers.
 
 ### Highlights
 - Experimental system identification
