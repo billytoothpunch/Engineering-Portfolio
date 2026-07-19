@@ -1,0 +1,5 @@
+kp,overshoot_percent,peak_time_s,rise_time_s,settling_time_s,steady_state_error_deg_per_s
+0.010,0.0,3.055,0.673,,13.26
+0.030,2.9,3.789,0.026,,3.47
+0.050,14.6,0.026,0.018,,2.19
+0.070,17.9,0.018,0.009,,1.54

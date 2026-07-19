@@ -1,0 +1,5 @@
+parameter,symbol,value,unit
+Rotational inertia,J,0.006972,kg m^2
+Viscous damping,c,0.002989,N m s
+Friction torque,Tf,0.0357,N m
+Applied torque,Ta,0.6,N m
