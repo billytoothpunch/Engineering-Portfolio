@@ -1,12 +1,12 @@
-# Muhammed Billal Noor — Engineering Portfolio
+# Welcome to my Engineering Portfolio
 
-Aeronautical Engineering student in the United Kingdom with project experience in aerodynamic analysis, CAD, finite element analysis, dynamics and control systems.
+
+My name is Billal noor I am Aeronautical Engineering student in the United Kingdom with project experience in aerodynamic analysis, CAD, finite element analysis, dynamics and control systems.
 
 ## Contact
 
 - **Email:** billytoothpunch@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/billalnoor/
-- **GitHub:** `https://github.com/YOUR-GITHUB-USERNAME`
 
 ## Technical skills
 
@@ -52,7 +52,3 @@ Modelling and feedback-control analysis of a torsional mechanical system using t
 ├── guides/
 └── START-HERE.md
 ```
-
-## About this portfolio
-
-The projects in this repository were developed during undergraduate engineering study and have been reorganised to demonstrate practical engineering skills. Before publication, all assessment wording, personal identifiers, marking information and university-only material should be removed.
