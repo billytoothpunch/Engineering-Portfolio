@@ -21,8 +21,11 @@ This repository presents the modelling, identification and control of a single-d
 - `docs/` – supporting technical report
 
 
+
 ## Author
-Muhammed Billal Noor
-Aeronautical Engineering student
-Email: billytoothpunch@gmail.com
-LinkedIn: https://www.linkedin.com/in/billalnoor/
+
+**Muhammed Billal Noor**  
+Aeronautical Engineering student  
+Email: billytoothpunch@gmail.com  
+LinkedIn: <https://www.linkedin.com/in/billalnoor/>
+
