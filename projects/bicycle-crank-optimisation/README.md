@@ -4,7 +4,7 @@ A CAD and finite element analysis project focused on reducing the mass of a bicy
 
 ## Project summary
 
-The initial crank model had a mass of **727 g**. Material was removed from lower-stress regions while preserving the pedal and bottom-bracket interfaces. The optimised design reached **297 g** meeting the target of less than 300 g while retaining a calculated minimum factor of safety of **10.37**.
+The initial crank model had a mass of **727 g**. Material was removed from lower stress regions while preserving the pedal and bottom bracket interfaces. The optimised design reached **297 g** meeting the target of less than 300 g while retaining a calculated minimum factor of safety of **10.37**.
 
 | Metric | Baseline design | Optimised design |
 |---|---:|---:|
@@ -22,12 +22,12 @@ The design was required to:
 - Have a mass below 300 g
 - Maintain a minimum factor of safety of 2
 - Preserve the original mounting interfaces and design envelope
-- Use a strong, corrosion-resistant and recyclable material
+- Use a strong, corrosion resistant and recyclable material
 - Avoid sharp external features and remain suitable for manufacture
 
 ## Software and methods
 
-- **Creo Parametric:** CAD modelling, mass-property evaluation and engineering drawing
+- **Creo Parametric:** CAD modelling, mass property evaluation and engineering drawing
 - **ANSYS Mechanical:** Static structural analysis, meshing and result evaluation
 - **Finite element analysis:** Equivalent stress, total deformation and safety factor
 - **Engineering calculations:** Applied force, bending moment and allowable stress
@@ -101,19 +101,7 @@ The calculated minimum factor of safety was 10.37 exceeding the required value o
 
 ## Outcome
 
-The redesign reduced the crank mass by approximately 59.1% from 727 g to 297 g. Under the stated static assumptions the optimised design remained below the allowable stress and exceeded the required factor of safety.
-
-## Limitations and future development
-
-This project is an undergraduate design study rather than a production certified component. Further work should include:
-
-- Dynamic and impact loading representative of BMX landings
-- Fatigue analysis using a realistic load spectrum
-- Improved contact and constraint modelling at the pedal and bottom bracket interfaces
-- A more detailed mesh-independence study
-- Manufacturing tolerances, fillet optimisation and CNC tool access checks
-- Physical testing and correlation with simulation
-- Review of the exact 7075 alloy temper and its certified material data
+The redesign reduced the crank mass by approximately 59.1% from 727 g to 297 g.
 
 ## Author
 
