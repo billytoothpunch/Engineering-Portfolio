@@ -27,12 +27,12 @@ The component set includes:
 
 ![Assembly gallery](images/assembly_gallery.png)
 
-The mechanism is organised into two principal sub-assemblies:
+The mechanism is organised into two principal sub assemblies:
 
 1. **Lower frame assembly** - combines the strut and linkage components.
 2. **Linear actuator assembly** - provides the controlled extension required to move the mechanism.
 
-These are integrated with the support structure, drag link, crank and wheel assemblies in the final landing-gear assembly.
+These are integrated with the support structure, drag link, crank and wheel assemblies in the final landing gear assembly.
 
 ## Engineering Drawings
 
@@ -53,17 +53,6 @@ The drawing set contains:
 | SUB_ASM_2 | Linear actuator assembly |
 | ASM_1 | Complete landing gear assembly |
 
-## Skills Demonstrated
-
-- Parametric solid modelling
-- Design intent and feature planning
-- Mechanical assembly constraints
-- Sub-assembly organisation
-- Exploded assembly communication
-- Section views and detailed drawings
-- Dimensioning and tolerancing
-- Bill of materials preparation
-- Mechanism layout and integration
 
 ## Repository Structure
 
@@ -71,7 +60,7 @@ The drawing set contains:
 cad/       Add the native Creo part, assembly and drawing files here
 images/    Portfolio previews and cleaned drawing sheets
 report/    Clean engineering drawing package
-docs/      Project and CAD-file notes
+docs/      Project and CAD file notes
 ```
 
 ## Author
