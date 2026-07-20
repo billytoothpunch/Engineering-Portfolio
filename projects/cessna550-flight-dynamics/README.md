@@ -68,7 +68,7 @@ It calculates atmospheric conditions, dynamic pressure, aerodynamic and propulsi
 
 ## Modal analysis
 
-The numerical linearisation was separated into longitudinal and lateral directional subsystems. The report evaluates:
+The numerical linearisation was separated into longitudinal and lateral directional subsystems:
 
 - **Short period mode:** fast longitudinal pitch response
 - **Phugoid mode:** slow exchange between speed and altitude
@@ -104,23 +104,6 @@ A yaw damper was evaluated using rudder feedback from yaw rate. The feedback aim
 
 ![Yaw damper root locus](assets/images/yaw-damper-root-locus.png)
 
-## Repository contents
-
-```text
-.
-├── README.md
-├── matlab/
-│   ├── C550aero.m
-│   ├── C550init.m
-│   └── EoM12.m
-├── data/
-│   ├── aircraft-parameters.csv
-│   └── trim-results.csv
-├── assets/images/
-├── docs/
-│   └── cessna-550-flight-dynamics-report.pdf
-└── model-files/
-```
 
 ## MATLAB files
 
@@ -128,33 +111,8 @@ A yaw damper was evaluated using rudder feedback from yaw rate. The feedback aim
 |---|---|
 | `C550init.m` | Initialises geometry, inertia, engine installation and aerodynamic derivatives |
 | `C550aero.m` | Calculates aerodynamic force and moment coefficients |
-| `EoM12.m` | Evaluates the nonlinear twelve state rigid-body equations of motion |
+| `EoM12.m` | Evaluates the nonlinear twelve state rigid body equations of motion |
 
-## External dependencies
-
-The supplied scripts form part of a larger simulation framework. `EoM12.m` calls functions that were not included in the source archive:
-
-  `atmosphere`
-- `TurboFanEngine`
-
-The report also refers to trimming, linearisation and simulation scripts that were not included. Add those permitted model/framework files to `model-files/` or the MATLAB path before attempting to reproduce every result. The three included MATLAB files remain useful as readable evidence of the aerodynamic and equations-of-motion implementation.
-
-## Limitations
-
-- Aerodynamic derivatives are a reduced order representation rather than CFD or wind tunnel data generated within this repository.
-- High angle of attack behaviour uses simplified nonlinear corrections.
-- Trim failure may reflect propulsion/control limits, optimiser initialisation or framework constraints.
-- The model assumes rigid body motion and does not include aeroelasticity.
-- Complete reproduction requires the external simulation framework listed above.
-
-## Further development
-
-- Add automated trim envelope generation with constraint diagnostics.
-- Compare linear and nonlinear responses from identical initial perturbations.
-- Validate modes against published Cessna 550 data where available.
-- Add actuator dynamics and rate limits.
-- Tune the yaw damper against damping ratio and handling quality targets.
-- Add unit tests for aerodynamic coefficients and equations of motion.
 
 ## Author
 
