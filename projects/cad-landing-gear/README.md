@@ -2,13 +2,13 @@
 
 ![Aircraft landing gear assembly](images/hero_landing_gear_assembly.png)
 
-A personal mechanical engineering portfolio project by **Billal Noor**, demonstrating parametric component modelling, mechanical assemblies, mechanism integration and production-style engineering drawings in **PTC Creo Parametric**.
+My mechanical engineering project for parametric component modelling, mechanical assemblies, mechanism integration and production style engineering drawings in **PTC Creo Parametric**.
 
 ## Project Overview
 
-The project develops a retractable aircraft landing gear mechanism from individual components through to a complete assembly. The design includes a lower frame, linkage components, a linear actuator and the supporting landing-gear structure.
+The project develops a retractable aircraft landing gear mechanism from individual components through to a complete assembly. The design includes a lower frame, linkage components, linear actuator and the supporting landing gear structure.
 
-The repository is arranged so the design can be reviewed visually before the native CAD files are opened.
+
 
 ## Components
 
@@ -21,7 +21,7 @@ The component set includes:
 - Lower strut
 - Main structural strut
 - Actuator cylinder and rod
-- Supporting frame and wheel-system interfaces
+- Supporting frame and wheel system interfaces
 
 ## Assembly Development
 
@@ -73,10 +73,6 @@ images/    Portfolio previews and cleaned drawing sheets
 report/    Clean engineering drawing package
 docs/      Project and CAD-file notes
 ```
-
-## Opening the CAD Files
-
-Place the native Creo files in the `cad` directory while retaining their original filenames and relationships. Include all dependent `.prt`, `.asm` and `.drw` files so assemblies resolve correctly.
 
 ## Author
 
