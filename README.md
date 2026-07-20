@@ -10,10 +10,10 @@ My name is Billal noor I am Aeronautical Engineering student in the United Kingd
 
 ## My Engineering skills
 
---**CAD:** Creo Parametric, assembly modelling, engineering drawings and STEP export
---**Simulation:** ANSYS Mechanical, static structural analysis and mesh convergence
---**Aerodynamics:** XFLR5, aerodynamic polars and stability analysis
---**Programming and analysis:** MATLAB, transfer functions, PID/PD control and engineering calculations
+**CAD:** Creo Parametric, assembly modelling, engineering drawings and STEP export
+**Simulation:** ANSYS Mechanical, static structural analysis and mesh convergence
+**Aerodynamics:** XFLR5, aerodynamic polars and stability analysis
+**Programming and analysis:** MATLAB, transfer functions, PID/PD control and engineering calculations
 
 
 ## My projects
