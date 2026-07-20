@@ -2,13 +2,11 @@
 
 ![Bench vice assembly](images/hero_bench_vice_assembly.png)
 
-A personal mechanical engineering portfolio project by **Billal Noor**, demonstrating parametric part modelling, detailed engineering drawings, assembly constraints and functional mechanism development using **PTC Creo Parametric**.
+Bench vice parametric part modelling, detailed engineering drawings, assembly constraints and functional mechanism development using **PTC Creo Parametric**.
 
 ## Project Overview
 
-This project develops a complete mechanical bench vice from individual components through to a functional assembly. The design includes a cast-style base, sliding jaw, lead screw, clamping bolt, threaded fasteners and retaining components.
-
-The repository is structured so the project can be reviewed visually before opening the native CAD files.
+This project develops a complete mechanical bench vice from individual components through to a functional assembly. The design includes a cast style base, sliding jaw, lead screw, clamping bolt, threaded fasteners and retaining components.
 
 ## Final Assembly
 
@@ -22,22 +20,18 @@ The modelled component set includes:
 
 - Base
 - Lead screw
-- Sliding-jaw clamping bolt
+- Sliding jaw clamping bolt
 - Sliding jaw
 - Lock nut
 - Hex nut
 - Circular retaining nut
 - Washer
 
-## Functional Mechanism
-
-![Bench vice mechanism states](images/mechanism_states.png)
-
-The assembly was configured to demonstrate:
+The assembly shows:
 
 - Static assembled condition
 - Linear movement of the sliding jaw
-- Screw-driven opening and closing behaviour
+- Screw driven opening and closing behaviour
 - Correct mechanical relationships between the screw, jaw and retaining hardware
 
 ## Engineering Drawings
@@ -58,18 +52,6 @@ The cleaned drawing package is available here:
 | VICE-007 | Circular nut |
 | VICE-008 | Washer |
 
-## Skills Demonstrated
-
-- Parametric solid modelling
-- Feature-order planning
-- Thread and fastener representation
-- Assembly constraints and mechanism movement
-- Section views and detailed drawings
-- Exploded assembly communication
-- Bill of materials preparation
-- Dimensioning and tolerancing
-- Mechanical design documentation
-
 ## Repository Structure
 
 ```text
@@ -81,7 +63,7 @@ docs/      CAD file and project notes
 
 ## Opening the CAD Files
 
-Place all native Creo `.prt`, `.asm` and `.drw` files inside the `cad` folder while retaining their original filenames. Include every referenced component so that the top-level assembly resolves without missing dependencies.
+Place all native Creo `.prt`, `.asm` and `.drw` files inside the `cad` folder while retaining their original filenames. Include every referenced component so that the top level assembly resolves without missing dependencies.
 
 ## Author
 
