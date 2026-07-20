@@ -1,1 +1,0 @@
-Add the native Creo .prt, .asm and .drw files here. Keep their original filenames.
