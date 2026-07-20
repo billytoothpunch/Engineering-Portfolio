@@ -3,10 +3,10 @@
 
 My name is Billal noor I am Aeronautical Engineering student in the United Kingdom with project experience in aerodynamic analysis, CAD, finite element analysis, dynamics and control systems.
 
-## Contact
+## Contact me
 
-- **Email:** billytoothpunch@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/billalnoor/
+**Email:** billytoothpunch@gmail.com
+**LinkedIn:** https://www.linkedin.com/in/billalnoor/
 
 ## My Engineering skills
 
@@ -16,7 +16,7 @@ My name is Billal noor I am Aeronautical Engineering student in the United Kingd
 **Programming and analysis:** MATLAB, transfer functions, PID/PD control and engineering calculations
 
 
-## Featured projects
+## My projects
 
 ### [Aircraft Aerodynamic Analysis Using XFLR5](projects/pipercub-xlfr5-analysis/)
 Fixed wing aerodynamic and stability analysis on a piper cub model using XFLR5, including lift, drag, pitching moment and aircraft geometry.
