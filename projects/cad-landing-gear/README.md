@@ -25,7 +25,6 @@ The component set includes:
 
 ## Assembly Development
 
-![Assembly gallery](images/assembly_gallery.png)
 
 The mechanism is organised into two principal sub assemblies:
 
